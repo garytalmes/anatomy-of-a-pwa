@@ -1,0 +1,12 @@
+{
+  "name": "anatomy-of-a-pwa",
+  "version": "1.0.0",
+  "description": "Details and sample code for building a Progressive Web Application",
+  "main": "db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
