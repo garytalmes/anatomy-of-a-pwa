@@ -13,7 +13,7 @@ const urlsToCache = [
   "/icons/icon-512x512.png"
 ];
 
-// This code as you might imagine fires of when the user has chosen to install the web app on their machine as a standalone PWA. You won't need to modify this code. Keep it exactly as-is.
+// This code, as you might imagine, fires when the user has chosen to install the web app on their machine as a standalone PWA. You won't need to modify this code. Keep it exactly as-is.
 self.addEventListener("install", function(event) {
   // Perform install steps
   event.waitUntil(

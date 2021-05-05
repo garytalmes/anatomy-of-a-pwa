@@ -9,15 +9,19 @@ const indexedDB =
 let db;
 
 // Tell indexedDb to open (or create) whatever database you want to work with
+// I'd recommend naming the database something like "budget" and the object store 
+// something like "pending" or "tba"
 const request = indexedDB.open("<your db name here>", 1);
 
 // Set up your object store
+// Think of an object store as a table inside your database
 request.onupgradeneeded = ({ target }) => {
   let db = target.result;
   db.createObjectStore("<object store name here>", { autoIncrement: true });
 };
 
 // Leave this code as-is
+// If the request was successful it means the Internet is back up, so we can query the real database.
 request.onsuccess = ({ target }) => {
   db = target.result;
   // check if app is online before reading from db
