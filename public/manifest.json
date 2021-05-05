@@ -3,7 +3,7 @@
   "name": "Web App Manifest Demo",
   "icons": [
     {
-      "src": "/assets/images/icons-192.png",
+      "src": "/icons/icons-192.png",
       "sizes": "192x192",
       "type": "image/png"
     }
